@@ -57,7 +57,6 @@ jobs:
 
       - name: Gradle prebuild
         run: |
-        chmod 777 gradlew
           echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
           ./gradlew prebuild
 
