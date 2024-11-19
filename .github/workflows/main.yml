@@ -58,6 +58,7 @@ jobs:
       - name: Gradle prebuild
         run: |
           echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
+          chmod 777 *
           ./gradlew prebuild
 
       - name: Build release
